@@ -1,0 +1,76 @@
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+body {
+	background: linear-gradient(-45deg, #C6FFDD, #FBD786, #F7797D);
+	background-size: 500% 500%;
+    animation-name: gradient;
+    animation-duration: 30s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+	height: 100vh;
+}
+
+p {
+	color: #0d917b;
+	text-align: justify;
+	font-size: calc(16px + (28 - 16) * ((100vw - 320px) / (1600 - 320)));
+	font-weight: 400;
+	font-family: 'Itim', cursive;
+}
+
+h1 {
+	color: #027461;
+	text-align: justify;
+	font-size: calc(28px + (40 - 28) * ((100vw - 320px) / (1600 - 320)));
+	font-weight: 400;
+	font-family: 'Kaushan Script', cursive;
+}
+
+.introduction {
+	padding-top: 8px;
+}
+
+.name {
+	text-align: center;
+	font-size: calc(40px + (80 - 40) * ((100vw - 320px) / (1600 - 320)));
+	font-weight: 600;
+}
+
+.introduction-core {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.portrait-div {
+	margin: 2em;
+}
+
+/* For creating the circled portrait */
+.portrait-wrap {
+	height: 200px;
+	width: 200px;
+	overflow: hidden;
+	border-radius: 50%;
+}
+
+/* For creating the circled portrait */
+.portrait {
+	width: 100%;
+	height: auto;
+}
+
+.text-div {
+	max-width: 600px;
+	margin: 2em;
+}
