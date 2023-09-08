@@ -56,18 +56,9 @@ h1 {
 	margin: 2em;
 }
 
-/* For creating the circled portrait */
-.portrait-wrap {
-	height: 200px;
-	width: 200px;
-	overflow: hidden;
-	border-radius: 50%;
-}
-
-/* For creating the circled portrait */
 .portrait {
-	width: 100%;
-	height: auto;
+	width: auto;
+	height: 200px;
 }
 
 .text-div {
