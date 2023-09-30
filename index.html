@@ -12,6 +12,9 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
         <!-- Compiled and minified JavaScript -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <!-- Import FullPage.JS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.css" integrity="sha512-wCVOuVtxsXqrQK7tj9j4BvyfITQmpp7UE7mVilD7aieGLYFEIAa5UKTP1RapOf6dxQ9JIKAneakcyykWG4r4Ow==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.js" integrity="sha512-LGiXf+jHGTHcIybSsOWO3I/in+OObCkcEsWIZ7IyhzfD6RzD5qDUw2CK+JveuI7zTSEcDG//bIOvOpAJW2BWsg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <!-- Import fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,29 +31,41 @@
         </script>
     </head>
     <body>
-        <div class="container">
-            <div class="col s12 introduction">
-                <h1 class="name">Hi! I'm Ken Sze.</h1>
-                <div class="introduction-core">
-                    <div class="portrait-div">
-                        <img class="circle portrait" src="./real.jpg" />
-                        <img 
-                                class="circle portrait tooltipped" data-position="bottom" 
-                                data-tooltip="My Profile Picture (Inscription #63128)" src="./virtual.png" 
-                            />
-                    </div>
-                    <div class="text-div">
-                        <h1>
-                            I'm a hobbyist developer (and a Radiographer).
-                        </h1>
-                        <p>
-                            I first studied programming in my secondary school, and treat coding as a hobby since then.
-                            <br />
-                            In University, I studied Radiography and currently works as a Radiographer in a public hospital.
-                        </p>
+        <div id="fullpage">
+            <!-- Introduction -->
+            <div class="section container">
+                <div class="col s12 introduction">
+                    <h1 class="name">Hi! I'm Ken Sze.</h1>
+                    <div class="introduction-core">
+                        <div class="portrait-div">
+                            <img class="circle portrait" src="./real.jpg" />
+                            <img 
+                                    class="circle portrait tooltipped" data-position="bottom" 
+                                    data-tooltip="My Profile Picture (Inscription #63128)" src="./virtual.png" 
+                                />
+                        </div>
+                        <div class="text-div">
+                            <h1>
+                                I'm a hobbyist developer (and a Radiographer).
+                            </h1>
+                            <p>
+                                I first studied programming in my secondary school, and treat coding as a hobby since then.
+                                <br />
+                                In University, I studied Radiography and currently works as a Radiographer in a public hospital.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
+            <div class="section">
+                AAA
+            </div>
         </div>
+        <!-- Required initialization from FullPage.JS -->
+        <script type="text/javascript">
+            new fullpage('#fullpage', {
+                autoScrolling: true
+            });
+        </script>
     </body>
 </html>
