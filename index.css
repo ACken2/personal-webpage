@@ -47,21 +47,17 @@ h1 {
 }
 
 .introduction-core {
-	display: flex;
 	justify-content: center;
 	align-items: center;
-}
-
-.portrait-div {
-	margin: 2em;
 }
 
 .portrait {
 	width: auto;
 	height: 200px;
+	display: block;
+	margin: auto;
 }
 
 .text-div {
 	max-width: 600px;
-	margin: 2em;
 }
