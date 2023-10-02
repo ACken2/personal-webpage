@@ -36,6 +36,10 @@ p, td {
 	font-family: 'Itim', cursive;
 }
 
+td {
+	text-align: left;
+}
+
 .section-div {
 	padding-top: 8px;
 }
@@ -54,7 +58,7 @@ p, td {
 }
 
 .screenshot {
-	height: 50vh;
+	height: 43vh;
 	width: auto;
 	display: block;
 	margin: auto;
@@ -73,10 +77,42 @@ p, td {
 	margin-right: 10px;
 }
 
+.get-in-touch {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .fontawesome-big {
-	font-size: 70px;
+	font-size: 60px;
 	color: #027461;
-	margin: 30px;
+	margin: 25px;
+}
+
+@media only screen and (max-width: 600px) and (max-height: 801px) {
+	.portrait {
+		width: 49%;
+		height: auto;
+		display: inline-block;
+		margin: auto;
+	}
+	.screenshot {
+		height: 35vh;
+		width: auto;
+		display: block;
+		margin: auto;
+	}
+	.bitcoin {
+		height: 35vh;
+		width: auto;
+		display: block;
+		margin: auto;
+	}
+	.fontawesome-big {
+		font-size: 50px;
+		color: #027461;
+		margin: 10px;
+	}
 }
 
 @media only screen and (min-width: 601px) {
@@ -94,7 +130,7 @@ p, td {
 	}
 }
 
-@media only screen and (min-width: 801px) {
+@media only screen and (min-width: 1001px) {
 	.screenshot {
 		height: 60vh;
 		width: auto;
