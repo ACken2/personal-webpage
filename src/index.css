@@ -90,28 +90,32 @@ td {
 }
 
 @media only screen and (max-width: 600px) and (max-height: 801px) {
+	h1, th {
+		font-size: calc(24px + (36 - 24) * ((100vw - 320px) / (1600 - 320)));
+	}
+	p, td {
+		font-size: calc(12px + (24 - 12) * ((100vw - 320px) / (1600 - 320)));
+	}
 	.portrait {
 		width: 49%;
 		height: auto;
 		display: inline-block;
-		margin: auto;
 	}
 	.screenshot {
 		height: 35vh;
 		width: auto;
-		display: block;
-		margin: auto;
 	}
 	.bitcoin {
 		height: 35vh;
 		width: auto;
-		display: block;
-		margin: auto;
 	}
 	.fontawesome-big {
 		font-size: 50px;
-		color: #027461;
 		margin: 10px;
+	}
+	.fontawesome {
+		font-size: 20px;
+		margin-right: 5px;
 	}
 }
 
