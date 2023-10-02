@@ -20,7 +20,7 @@ body {
 	height: 100vh;
 }
 
-h1 {
+h1, th {
 	color: #027461;
 	text-align: justify;
 	font-size: calc(28px + (40 - 28) * ((100vw - 320px) / (1600 - 320)));
@@ -28,7 +28,7 @@ h1 {
 	font-family: 'Kaushan Script', cursive;
 }
 
-p, th, td {
+p, td {
 	color: #0d917b;
 	text-align: justify;
 	font-size: calc(16px + (28 - 16) * ((100vw - 320px) / (1600 - 320)));
@@ -71,6 +71,12 @@ p, th, td {
 	font-size: 30px;
 	color: #027461;
 	margin-right: 10px;
+}
+
+.fontawesome-big {
+	font-size: 70px;
+	color: #027461;
+	margin: 30px;
 }
 
 @media only screen and (min-width: 601px) {
