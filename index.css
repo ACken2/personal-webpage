@@ -20,20 +20,20 @@ body {
 	height: 100vh;
 }
 
-p {
-	color: #0d917b;
-	text-align: justify;
-	font-size: calc(16px + (28 - 16) * ((100vw - 320px) / (1600 - 320)));
-	font-weight: 400;
-	font-family: 'Itim', cursive;
-}
-
 h1 {
 	color: #027461;
 	text-align: justify;
 	font-size: calc(28px + (40 - 28) * ((100vw - 320px) / (1600 - 320)));
 	font-weight: 400;
 	font-family: 'Kaushan Script', cursive;
+}
+
+p, th, td {
+	color: #0d917b;
+	text-align: justify;
+	font-size: calc(16px + (28 - 16) * ((100vw - 320px) / (1600 - 320)));
+	font-weight: 400;
+	font-family: 'Itim', cursive;
 }
 
 .section-div {
