@@ -90,23 +90,17 @@ td {
 }
 
 @media only screen and (max-width: 600px) and (max-height: 801px) {
-	h1, th {
-		font-size: calc(24px + (36 - 24) * ((100vw - 320px) / (1600 - 320)));
-	}
-	p, td {
-		font-size: calc(12px + (24 - 12) * ((100vw - 320px) / (1600 - 320)));
-	}
 	.portrait {
 		width: 49%;
 		height: auto;
 		display: inline-block;
 	}
 	.screenshot {
-		height: 35vh;
+		height: 30vh;
 		width: auto;
 	}
 	.bitcoin {
-		height: 35vh;
+		height: 30vh;
 		width: auto;
 	}
 	.fontawesome-big {
