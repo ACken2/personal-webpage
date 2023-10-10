@@ -13,17 +13,17 @@
 body {
 	background: linear-gradient(-45deg, #C6FFDD, #FBD786, #F7797D);
 	background-size: 500% 500%;
-    animation-name: gradient;
-    animation-duration: 30s;
-    animation-timing-function: ease;
-    animation-iteration-count: infinite;
+	animation-name: gradient;
+	animation-duration: 30s;
+	animation-timing-function: ease;
+	animation-iteration-count: infinite;
 	height: 100vh;
 }
 
 h1, th {
 	color: #027461;
 	text-align: justify;
-	font-size: calc(28px + (40 - 28) * ((100vw - 320px) / (1600 - 320)));
+	font-size: min(calc(28px + (40 - 28) * ((100vw - 320px) / (1600 - 320))), calc(28px + (40 - 28) * ((100vh - 600px) / (1080 - 600))));
 	font-weight: 400;
 	font-family: 'Kaushan Script', cursive;
 }
@@ -31,7 +31,7 @@ h1, th {
 p, td {
 	color: #0d917b;
 	text-align: justify;
-	font-size: calc(16px + (28 - 16) * ((100vw - 320px) / (1600 - 320)));
+	font-size: min(calc(16px + (28 - 16) * ((100vw - 320px) / (1600 - 320))), calc(16px + (28 - 16) * ((100vh - 600px) / (1080 - 600))));
 	font-weight: 400;
 	font-family: 'Itim', cursive;
 }
@@ -46,7 +46,7 @@ td {
 
 .section-header {
 	text-align: center;
-	font-size: calc(40px + (80 - 40) * ((100vw - 320px) / (1600 - 320)));
+	font-size: min(calc(40px + (80 - 40) * ((100vw - 320px) / (1600 - 320))), calc(40px + (80 - 40) * ((100vh - 600px) / (1080 - 600))));
 	font-weight: 600;
 }
 
