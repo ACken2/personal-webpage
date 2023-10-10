@@ -20,6 +20,11 @@ body {
 	height: 100vh;
 }
 
+h1 {
+	margin-top: calc(min(calc(40px + (80 - 40) * ((100vw - 320px) / (1600 - 320))), calc(40px + (80 - 40) * ((100vh - 600px) / (1080 - 600))))/2);
+	margin-bottom: calc(min(calc(40px + (80 - 40) * ((100vw - 320px) / (1600 - 320))), calc(40px + (80 - 40) * ((100vh - 600px) / (1080 - 600))))/2);
+}
+
 h1, th {
 	color: #027461;
 	text-align: justify;
@@ -53,6 +58,7 @@ td {
 .portrait {
 	width: auto;
 	height: 150px;
+	max-height: 25vh;
 	display: block;
 	margin: auto;
 }
@@ -126,6 +132,9 @@ td {
 		justify-content: center;
 		align-items: center;
 	}
+}
+
+@media only screen and (min-width: 601px) and (min-height: 601px) {
 	.portrait {
 		height: 200px;
 	}
@@ -135,7 +144,7 @@ td {
 	}
 }
 
-@media only screen and (min-width: 1001px) {
+@media only screen and (min-width: 1001px) and (min-height: 601px) {
 	.screenshot {
 		height: 60vh;
 		width: auto;
